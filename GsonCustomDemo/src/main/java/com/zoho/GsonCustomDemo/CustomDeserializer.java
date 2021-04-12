@@ -29,7 +29,6 @@ public class CustomDeserializer implements JsonDeserializer<Customer>{
 			chargList.add(charg);
 		}
 		
-		
 		Customer cust = new Customer(
 				jsonObj.get("Customer_Name").getAsString(),
 				jsonObj.get("Customer_Id").getAsString(),

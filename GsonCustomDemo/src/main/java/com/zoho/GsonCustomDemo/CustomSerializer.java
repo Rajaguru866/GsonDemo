@@ -20,6 +20,7 @@ public class CustomSerializer implements JsonSerializer<Customer>{
 		custJson.add("Charges", getChargeList(src.getCharges()));
 		return custJson;
 	}
+	
 	public JsonElement getChargeList(List<Charge> list)
 	{
 		JsonArray chargListJson = new JsonArray();
